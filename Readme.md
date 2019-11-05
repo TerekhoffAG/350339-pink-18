@@ -1,7 +1,7 @@
 # Личный проект «Пинк» [![Build status][travis-image]][travis-url] [![Dependency status][dependency-image]][dependency-url]
 
 * Студент: [Саша Терехов](https://up.htmlacademy.ru/adaptive/18/user/350339).
-* Наставник: `Неизвестно`.
+* Наставник: Keksobot.
 
 ---
 
