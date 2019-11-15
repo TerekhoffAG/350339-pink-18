@@ -14,25 +14,106 @@
         <button class="main-nav__toggle" type="button">
           <span class="visually-hidden">Показать/убрать меню</span>
         </button>
-        <ul class="main-nav__list navigation">
-          <li class="navigation__item">
-            <a class="navigation__link" href="index.html">Главная</a>
+        <ul class="main-nav__list">
+          <li class="main-nav__item">
+            <a class="main-nav__link" href="index.html">Главная</a>
           </li>
-          <li class="navigation__item">
-            <a class="navigation__link" href="photo.html">Фотографии</a>
+          <li class="main-nav__item">
+            <a class="main-nav__link" href="photo.html">Фотографии</a>
           </li>
-          <li class="navigation__item">
-            <a class="navigation__link navigation__item--active">Конкурс</a>
+          <li class="main-nav__item main-nav__item--active">
+            <a class="main-nav__link">Конкурс</a>
           </li>
-          <li class="navigation__item">
-            <a class="navigation__link" href="https://htmlacademy.ru/intensive/adaptive">HTML Academy</a>
+          <li class="main-nav__item">
+            <a class="main-nav__link" href="https://htmlacademy.ru/intensive/adaptive">HTML Academy</a>
           </li>
         </ul>
       </nav>
-    <header>
+    </header>
 
     <main class="page-main">
       <h1 class="page-main__title">Конкурс на самое безбашенное путешествие с Пинк</h1>
+      <p class="page-main__description">Поделитесь своей историей и получите шанс выиграть ценный приз - 1000 миль на вашу бонусную карту!</p>
+
+      <form class="form" action="https://echo.htmlacademy.ru" method="POST">
+        <fieldset class="form__name">
+          <label class="form__title">
+            Фамилия:
+            <input class="form__input-name" type="text" name="last name" placeholder="Укажите фамилию *" required>
+          </label>
+          <label class="form__title">
+            Имя:
+            <input class="form__input-name" type="text" name="first name" placeholder="Введите ваше имя *" required>
+          </label>
+          <label class="form__title">
+            Отчество:
+            <input class="form__input-name" type="text" name="thrid name" placeholder="Ну и отчество тоже">
+          </label>
+        </fieldset>
+
+        <fieldset class="form__progress">
+          <legend class="form__description">Ваши безбашенные достижения в путешествии</legend>
+          <label class="form__title">
+            <input class="form__check-progress" type="checkbox" name="selfi" checked>
+            Сделал селфи с акулой
+          </label>
+          <label class="form__title">
+            <input class="form__check-progress" type="checkbox" name="burn" checked>
+            Обгорел на пляже
+          </label>
+          <label class="form__title">
+            <input class="form__check-progress" type="checkbox" name="chaki">
+            Видел Чака Норриса
+          </label>
+          <label class="form__title">
+            <input class="form__check-progress" type="checkbox" name="buy">
+            Накупил сувениров
+          </label>
+          <label class="form__title">
+            <input class="form__check-progress" type="checkbox" name="hold" checked>
+            Удержал башню
+          </label>
+          <label class="form__title">
+            <input class="form__check-progress" type="checkbox" name="break">
+            Разгромил отель
+          </label>
+        </fieldset>
+
+        <fieldset class="form__contacts">
+          <label class="form__title">
+            Номер телефона
+            <input class="form__input-phone" type="text" name="phone" placeholder="Номер, пожалуйста">
+          </label>
+          <label class="form__title">
+            Адрес почты
+            <input class="form__input-email" type="email" name="e-mail" placeholder="Введите почту *" required>
+          </label>
+        </fieldset>
+
+        <fieldset class="form__app">
+          <legend class="form__description">С каким приложением путешествовали?</legend>
+          <label class="form__title">
+            <input class="form__check-os" type="radio" name="os" value="ios" checked>
+            Pink для iOS
+          </label>
+          <label class="form__title">
+            <input class="form__check-os" type="radio" name="os" value="android">
+            Pink для Android
+          </label>
+          <label class="form__title">
+            <input class="form__check-os" type="radio" name="os" value="windows">
+            Windows Phone
+          </label>
+        </fieldset>
+
+        <fieldset class="form__emotion">
+          <legend class="form__description">Опишите свои эмоции</legend>
+          <textarea class="form__entry-field" name="text" cols="31" rows="5" placeholder="Можно прям в красках, не стесняясь в выражениях"></textarea>
+        </fieldset>
+
+        <button class="form__btn btn-form" type="submit">Отправить форму</button>
+        <small class="form__footnote"><sup class="form__star">*</sup>&mdash; обязательные поля</small>
+      </form>
     </main>
 
     <footer class="page-footer">
@@ -62,6 +143,28 @@
         </a>
       </p>
     </footer>
+
+    <section class="modal-error">
+      <h2 class="visually-hidden">Ошибка ввода данных</h2>
+      <div class="modal-error__wrapper">
+        <p class="modal-error__title">Что-то пошло не так!</p>
+        <p class="modal-error__text">Проверьте поля, выделенные красным, скорее всего вы забыли их заполнить</p>
+      </div>
+      <div class="modal-error__wrapper-btn">
+        <button class="modal-error__btn btn-form" type="button">Oк</button>
+      </div>
+    </section>
+
+    <section class="modal-success">
+      <h2 class="visually-hidden">Заявка принята</h2>
+      <div class="modal-success__wrapper">
+        <p class="modal-success__title">Ваша заявка отправлена</p>
+        <p class="modal-success__text">Спасибо за ваше участие, ваша заявка уже поступила к нам. В ближайшее время мы рассмотрим ее и оповестим вас.</p>
+      </div>
+      <div class="modal-success__wrapper-btn">
+        <button class="modal-success__btn btn-form" type="button">Закрыть окно</button>
+      </div>
+    </section>
 
   </body>
 </html>

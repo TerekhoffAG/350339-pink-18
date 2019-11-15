@@ -14,18 +14,18 @@
         <button class="main-nav__toggle" type="button">
           <span class="visually-hidden">Показать/убрать меню</span>
         </button>
-        <ul class="main-nav__list navigation">
-          <li class="navigation__item navigation__item--active">
-            <a class="navigation__link">Главная</a>
+        <ul class="main-nav__list">
+          <li class="main-nav__item main-nav__item--active">
+            <a class="main-nav__link">Главная</a>
           </li>
-          <li class="navigation__item">
-            <a class="navigation__link" href="photo.html">Фотографии</a>
+          <li class="main-nav__item">
+            <a class="main-nav__link" href="photo.html">Фотографии</a>
           </li>
-          <li class="navigation__item">
-            <a class="navigation__link" href="form.html">Конкурс</a>
+          <li class="main-nav__item">
+            <a class="main-nav__link" href="form.html">Конкурс</a>
           </li>
-          <li class="navigation__item">
-            <a class="navigation__link" href="https://htmlacademy.ru/intensive/adaptive">HTML Academy</a>
+          <li class="main-nav__item">
+            <a class="main-nav__link" href="https://htmlacademy.ru/intensive/adaptive">HTML Academy</a>
           </li>
         </ul>
       </nav>
@@ -38,20 +38,20 @@
         <h2 class="visually-hidden">Загрузка мобильного приложения</h2>
         <p class="downloud__title">Взгляните на жизнь иначе!</p>
         <img class="downloud__image" src="http://placehold.it/320x286" width="320" height="286" alt="Демонстрация мобильного приложения">
-        <a class="downloud__btn btn" href="#">Скачать приложение</a>
-        <ul class="downloud__list os-list">
-          <li class="os-list__item">
-            <a class="os-list__link os-list__link--apple" href="https://itunes.apple.com">
+        <a class="downloud__btn btn-upload" href="#">Скачать приложение</a>
+        <ul class="downloud__list">
+          <li class="downloud__item">
+            <a class="downloud__link downloud__link--apple" href="https://itunes.apple.com">
               <span class="visually-hidden">логотип OS X</span>
             </a>
           </li>
-          <li class="os-list__item">
-            <a class="os-list__link os-list__link--google" href="https://play.google.com/store">
+          <li class="downloud__item">
+            <a class="downloud__link downloud__link--google" href="https://play.google.com/store">
               <span class="visually-hidden">логотип Android</span>
             </a>
           </li>
-          <li class="os-list__item">
-            <a class="os-list__link os-list__link--ms" href="https://www.microsoft.com/ru-ru/store">
+          <li class="downloud__item">
+            <a class="downloud__link downloud__link--ms" href="https://www.microsoft.com/ru-ru/store">
               <span class="visually-hidden">логотип Windows</span>
             </a>
           </li>
@@ -65,19 +65,122 @@
         <p class="advantage__title">Нам есть, что вам  предложить!</p>
         <ul class="advantage__list">
           <li class="advantage__item">
-            <h3 class="advantage__title-item">Поднимает настроение</h3>
+            <h3 class="advantage__title">Поднимает настроение</h3>
             <p class="advantage__text">Приложение позволит вам победить осеннюю хандру и депрессию буквально в несколько кликов!</p>
           </li>
           <li class="advantage__item">
-            <h3 class="advantage__title-item">Меняет мир вокруг</h3>
+            <h3 class="advantage__title">Меняет мир вокруг</h3>
             <p class="advantage__text">Сделайте снимок и украсьте его смайликом или текстовой надписью, чтобы усилить эффект</p>
           </li>
           <li class="advantage__item">
-            <h3 class="advantage__title-item">Заводит новых друзей</h3>
+            <h3 class="advantage__title">Заводит новых друзей</h3>
             <p class="advantage__text">Ставьте лайки, комментируйте, делитесь фотографиями с друзьями и заводите новых</p>
           </li>
         </ul>
         <img class="advantage__image" src="http://placehold.it/157x279" width="157" height="279" alt="Демонстрация мобильного приложения">
+      </section>
+
+      <section class="reviews">
+        <div class="reviews__wrapper slider">
+          <h2 class="visually-hidden">Отзовы о приложении</h2>
+          <div class="slider__list">
+            <blockquote class="slider__item">
+              <span class="slider__review-author">Николай Петров</span>
+              <p class="slider__review-text">Это приложение перевернуло мой мир и позволило по-новому взглянуть на привычные серые вещи! А еще я познакомился со своей будущей женой в комментариях к выложенной фотографии!</p>
+            </blockquote>
+          </div>
+          <p class="slider__toggles">
+            <button class="slider__toggle slider__toggle--activ" type="button">1</button>
+            <button class="slider__toggle" type="button">2</button>
+            <button class="slider__toggle" type="button">3</button>
+          </p>
+        </div>
+      </section>
+
+      <section class="price">
+        <h2 class="visually-hidden">Стоимость тарифов</h2>
+        <div class="price__wrapper slider">
+          <ul class="slider__list">
+            <li class="slider__item">
+              <table class="slider__tariff">
+                <tr>
+                  <th class="slider__tariff-name">
+                    <p class="slider__tariff-title">База</p><span class="slider__tariff-cost">1,99 USD</span>
+                  </th>
+                </tr>
+                <tr>
+                  <td class="slider__option">Розовый фильтр<span class="slider__option-on">есть</span></td>
+                </tr>
+                <tr>
+                  <td class="slider__option">Смайлики<span class="slider__option-off">нет</span></td>
+                </tr>
+                <tr>
+                  <td class="slider__option">Комментарии<span class="slider__option-off">нет</span></td>
+                </tr>
+              </table>
+            </li>
+            <li class="slider__item">
+              <table class="slider__tariff">
+                <tr>
+                  <th class="slider__tariff-name">
+                    <p class="slider__tariff-title">Стандарт</p><span class="slider__tariff-cost">3,99 USD</span>
+                  </th>
+                </tr>
+                <tr>
+                  <td class="slider__option">Розовый фильтр<span class="slider__option-on">есть</span></td>
+                </tr>
+                <tr>
+                  <td class="slider__option">Смайлики<span class="slider__option-on">есть</span></td>
+                </tr>
+                <tr>
+                  <td class="slider__option">Комментарии<span class="slider__option-off">нет</span></td>
+                </tr>
+              </table>
+            </li>
+            <li class="slider__item">
+              <table class="slider__tariff">
+                <tr>
+                  <th class="slider__tariff-name">
+                    <p class="slider__tariff-title">Анлим</p><span class="slider__tariff-cost">9,99 USD</span>
+                  </th>
+                </tr>
+                <tr>
+                  <td class="slider__option">Розовый фильтр<span class="slider__option-on">есть</span></td>
+                </tr>
+                <tr>
+                  <td class="slider__option-name">Смайлики<span class="slider__option-on">есть</span></td>
+                </tr>
+                <tr>
+                  <td class="slider__option-name">Комментарии<span class="slider__option-on">есть</span></td>
+                </tr>
+              </table>
+            </li>
+          </ul>
+          <p class="slider__toggles">
+            <button class="slider__toggle" type="button">1</button>
+            <button class="slider__toggle slider__toggle--activ" type="button">2</button>
+            <button class="slider__toggle" type="button">3</button>
+          </p>
+        </div>
+      </section>
+
+      <section class="contacts">
+        <h2 class="visually-hidden">Контакты для связи</h2>
+        <p class="contacts__title">Остались вопросы?</p>
+        <p class="contacts__title">Свяжитесь с нами!</p>
+        <p class="contacts__text">
+          <b class="contacts__head">Звоните:</b>
+          <a class="contacts__link" href="tel:+78125556666">+7 (812) 555-66-66</a>
+        </p>
+        <p class="contacts__text">
+          <b class="contacts__head">Пишите:</b>
+          <a class="contacts__link" href="mailto:mail@htmlacademy.ru">mail@htmlacademy.ru</a>
+        </p>
+        <p class="contacts__text">
+          <b class="contacts__head">Приезжайте в гости:</b>
+          ул. Большая Конюшенная 19/8
+        </p>
+        <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d1998.6037872533277!2d30.320858716096975!3d59.93871648187614!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x4696310fca145cc1%3A0x42b32648d8238007!2z0JHQvtC70YzRiNCw0Y8g0JrQvtC90Y7RiNC10L3QvdCw0Y8g0YPQuy4sIDE5LzgsINCh0LDQvdC60YIt0J_QtdGC0LXRgNCx0YPRgNCzLCAxOTExODY!5e0!3m2!1sru!2sru!4v1537336088146" width="320" height="200" style="border:0" allowfullscreen></iframe>
       </section>
 
     </main>

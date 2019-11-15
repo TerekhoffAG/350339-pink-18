@@ -14,22 +14,22 @@
         <button class="main-nav__toggle" type="button">
           <span class="visually-hidden">Показать/убрать меню</span>
         </button>
-        <ul class="main-nav__list navigation">
-          <li class="navigation__item">
-            <a class="navigation__link" href="index.html">Главная</a>
+        <ul class="main-nav__list">
+          <li class="main-nav__item">
+            <a class="main-nav__link" href="index.html">Главная</a>
           </li>
-          <li class="navigation__item">
-            <a class="navigation__link navigation__item--active">Фотографии</a>
+          <li class="main-nav__item main-nav__item--active">
+            <a class="main-nav__link">Фотографии</a>
           </li>
-          <li class="navigation__item">
-            <a class="navigation__link" href="form.html">Конкурс</a>
+          <li class="main-nav__item">
+            <a class="main-nav__link" href="form.html">Конкурс</a>
           </li>
-          <li class="navigation__item">
-            <a class="navigation__link" href="https://htmlacademy.ru/intensive/adaptive">HTML Academy</a>
+          <li class="main-nav__item">
+            <a class="main-nav__link" href="https://htmlacademy.ru/intensive/adaptive">HTML Academy</a>
           </li>
         </ul>
       </nav>
-    <header>
+    </header>
 
     <main class="page-main">
       <h1 class="page-main__title">Фотографии пользователей</h1>
@@ -37,6 +37,7 @@
       <p class="page-main__text">Видите, как не хватает ваших?</p>
 
       <section class="gallery">
+        <h2 class="visually-hidden">Блок с фотографиями пользователей</h2>
         <ul class="gallery__list">
           <li class="gallery__item post post--panorama">
             <a class="post__link" href="#">
@@ -139,6 +140,40 @@
           </li>
         </ul>
       </section>
+
+      <section class="tools">
+        <h2 class="visually-hidden">Инструмент для обработки и загрузки фото на сайт</h2>
+        <p class="tools__description">Затмите их всех! Выкладывайте все, что накопилось в телефоне!</p>
+        <img class="tools__image" src="http://placehold.it/280x374" width="280" height="374" alt="фото для редактирования и загрузки">
+        <form class="tools__form" action="https://echo.htmlacademy.ru" method="post">
+          <ul class="tools__list">
+            <li class="tools__item">
+              <span class="visually-hidden">Обрезать</span>
+              <input class="tools__value" type="number" name="tools-cut" value="20">
+              <div class="tools__range">
+                <div class="tools__pin" tabindex="0">Кнопка изменения фотографии</div>
+              </div>
+            </li>
+            <li class="tools__item">
+              <span class="visually-hidden">Заливка</span>
+              <input class="tools__value" type="number" name="tools-fill" value="20">
+              <div class="tools__range">
+                <div class="tools__pin" tabindex="0">Кнопка изменения фотографии</div>
+              </div>
+            </li>
+            <li class="tools__item">
+              <span class="visually-hidden">Контраст</span>
+              <input class="tools__value" type="number" name="tools-contrast" value="20">
+              <div class="tools__range">
+                <div class="tools__pin" tabindex="0">Кнопка изменения фотографии</div>
+              </div>
+            </li>
+          </ul>
+          <button class="tools__btn-post btn-tool" type="submit">Запостить</button>
+          <button class="tools__btn-clear btn-tool" type="reset">Отмена</button>
+        </form>
+      </section>
+
     </main>
 
     <footer class="page-footer">
