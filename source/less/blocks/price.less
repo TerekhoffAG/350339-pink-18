@@ -1,6 +1,6 @@
 .price {
   background-color: @bg-advantage;
-  background-image: url(../../img/bg-triangle-white.svg);
+  background-image: url("../../img/bg-triangle-white.svg");
   background-repeat: no-repeat;
   background-position: top center;
   background-size: contain;
@@ -39,9 +39,9 @@
     content: "";
     display: block;
     position: absolute;
-    top: 0px;
+    top: 0;
     left: -2px;
-    background-image: url(../../img/bg-hit.svg);
+    background-image: url("../../img/bg-hit.svg");
     background-repeat: no-repeat;
 
     width: 72px;
@@ -105,7 +105,7 @@
     height: 22px;
     top: -26px;
     left: 208px;
-    background-image: url(../../img/icon-yes.svg);
+    background-image: url("../../img/icon-yes.svg");
     background-repeat: no-repeat;
     background-size: contain;
   }
@@ -122,7 +122,7 @@
     height: 27px;
     top: -30px;
     left: 210px;
-    background-image: url(../../img/icon-no.svg);
+    background-image: url("../../img/icon-no.svg");
     background-repeat: no-repeat;
   }
 }
@@ -139,7 +139,7 @@
   border: none;
   border-radius: 50%;
   background-color: @color-text;
-  opacity: .3;
+  opacity: 0.3;
   .reset-block();
   margin-left: 9px;
   margin-right: 9px;
@@ -156,11 +156,11 @@
 
   &:hover,
   &:focus {
-    opacity: .6;
+    opacity: 0.6;
   }
 
   &:active {
-    opacity: .1;
+    opacity: 0.1;
   }
 }
 
@@ -185,11 +185,10 @@
   }
 
   .price__tariff-name--hit {
-
     &::before {
-      top: 0px;
-      left: 0px;
-      background-image: url(../../img/bg-hit-tablet.svg);
+      top: 0;
+      left: 0;
+      background-image: url("../../img/bg-hit-tablet.svg");
 
       width: 61px;
       height: 61px;
@@ -204,12 +203,12 @@
   .price__tariff-title {
     font-size: 16px;
 
-    padding-bottom: 0px;
+    padding-bottom: 0;
   }
 
   .price__tariff-cost {
     font-size: 18px;
-    line-height:25px
+    line-height: 25px;
   }
 
   .price__option {
@@ -259,11 +258,10 @@
   }
 
   .price__tariff-name--hit {
-
     &::before {
-      top: 0px;
-      left: 0px;
-      background-image: url(../../img/bg-hit.svg);
+      top: 0;
+      left: 0;
+      background-image: url("../../img/bg-hit.svg");
 
       width: 72px;
       height: 72px;
@@ -283,7 +281,7 @@
 
   .price__tariff-cost {
     font-size: 24px;
-    line-height:25px
+    line-height: 25px;
   }
 
   .price__option {

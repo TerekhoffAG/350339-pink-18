@@ -54,10 +54,10 @@
   background-repeat: no-repeat;
 
   &::before {
-  content: "";
+    content: "";
     position: absolute;
-    top: 0px;
-    left: 0px;
+    top: 0;
+    left: 0;
     display: block;
     width: 320px;
     height: 62px;
@@ -80,6 +80,7 @@
     background-image: url("../../img/icon-map-marker.svg");
   }
 }
+
 @media (min-width: @tablet-width) {
   .contacts {
     padding-top: 46px;
@@ -113,7 +114,7 @@
 
     &:last-child {
       margin-top: 17px;
-      margin-bottom: 0px;
+      margin-bottom: 0;
     }
   }
 
@@ -134,18 +135,18 @@
     background-position: center bottom -127px;
 
     &::before {
-    content: "";
-    position: absolute;
-    top: 0;
-    left: 0;
-    display: block;
-    width: 660px;
-    height: 123px;
+      content: "";
+      position: absolute;
+      top: 0;
+      left: 0;
+      display: block;
+      width: 660px;
+      height: 123px;
 
-    background-image: url("../../img/bg-triangle-white-footer.svg");
-    background-position: top -54px center;
-    background-repeat: no-repeat;
-    background-size: cover;
+      background-image: url("../../img/bg-triangle-white-footer.svg");
+      background-position: top -54px center;
+      background-repeat: no-repeat;
+      background-size: cover;
     }
 
     &::after {
@@ -206,12 +207,12 @@
     background-position: center bottom -197px;
 
     &::before {
-    width: 960px;
+      width: 960px;
 
-    background-image: url("../../img/bg-triangle-white-footer.svg");
-    background-position: top center;
-    background-repeat: no-repeat;
-    background-size: cover;
+      background-image: url("../../img/bg-triangle-white-footer.svg");
+      background-position: top center;
+      background-repeat: no-repeat;
+      background-size: cover;
     }
 
     &::after {
