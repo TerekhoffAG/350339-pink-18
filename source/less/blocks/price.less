@@ -1,0 +1,310 @@
+.price {
+  background-color: @bg-advantage;
+  background-image: url(../../img/bg-triangle-white.svg);
+  background-repeat: no-repeat;
+  background-position: top center;
+  background-size: contain;
+
+  padding: 91px 0 47px 0;
+}
+
+.price__wrapper {
+  width: 320px;
+  margin: 0 auto;
+  overflow: hidden;
+  position: relative;
+  text-align: center;
+}
+
+.price__tariff {
+  border-collapse: collapse;
+  position: absolute;
+  left: -535px;
+}
+
+.price__tariff-name {
+  color: @color-menu;
+  border-right: 2px solid #e5e5e5;
+  border-bottom: 2px solid @color-text;
+  background-color: @color-text;
+
+  padding-top: 16px;
+  padding-bottom: 18px;
+}
+
+.price__tariff-name--hit {
+  position: relative;
+
+  &::before {
+    content: "";
+    display: block;
+    position: absolute;
+    top: 0px;
+    left: -2px;
+    background-image: url(../../img/bg-hit.svg);
+    background-repeat: no-repeat;
+
+    width: 72px;
+    height: 72px;
+  }
+
+  &::after {
+    position: absolute;
+    content: "хит";
+    font-weight: 400;
+    font-size: 14px;
+    text-transform: uppercase;
+    transform: rotate(-45deg);
+    top: 17px;
+    left: 8px;
+  }
+}
+
+.price__tariff-title {
+  .reset-block();
+  font-size: 18px;
+  line-height: 30px;
+  font-weight: 700;
+  text-transform: uppercase;
+
+  padding-bottom: 2px;
+}
+
+.price__tariff-cost {
+  font-size: 24px;
+  line-height: 30px;
+  font-weight: 300;
+}
+
+.price__option {
+  text-align: left;
+
+  min-width: 254px;
+  padding-left: 21px;
+  padding-top: 15px;
+  padding-bottom: 14px;
+
+  border: 2px solid #e5e5e5;
+  background-color: @color-menu;
+}
+
+.price__option-name {
+  font-weight: 400;
+  line-height: 30px;
+  text-transform: uppercase;
+}
+
+.price__option-on {
+  position: relative;
+
+  &::before {
+    content: "";
+    position: absolute;
+    display: block;
+    width: 35px;
+    height: 22px;
+    top: -26px;
+    left: 208px;
+    background-image: url(../../img/icon-yes.svg);
+    background-repeat: no-repeat;
+    background-size: contain;
+  }
+}
+
+.price__option-off {
+  position: relative;
+
+  &::before {
+    content: "";
+    position: absolute;
+    display: block;
+    width: 27px;
+    height: 27px;
+    top: -30px;
+    left: 210px;
+    background-image: url(../../img/icon-no.svg);
+    background-repeat: no-repeat;
+  }
+}
+
+.price__toggles {
+  padding-top: 312px;
+}
+
+.price__toggle {
+  cursor: pointer;
+  width: 6px;
+  height: 6px;
+  font-size: 0;
+  border: none;
+  border-radius: 50%;
+  background-color: @color-text;
+  opacity: .3;
+  .reset-block();
+  margin-left: 9px;
+  margin-right: 9px;
+
+  &--active {
+    width: 12px;
+    height: 12px;
+    border: 3px solid @color-text;
+    background-color: transparent;
+    opacity: 1;
+    margin-left: 3px;
+    margin-right: 3px;
+  }
+
+  &:hover,
+  &:focus {
+    opacity: .6;
+  }
+
+  &:active {
+    opacity: .1;
+  }
+}
+
+@media (min-width: @tablet-width) {
+  .price {
+    padding-top: 89px;
+    padding-bottom: 68px;
+  }
+
+  .price__wrapper {
+    width: 620px;
+    margin: 0 auto;
+  }
+
+  .price__tariff {
+    position: static;
+  }
+
+  .price__tariff-name {
+    padding-top: 12px;
+    padding-bottom: 10px;
+  }
+
+  .price__tariff-name--hit {
+
+    &::before {
+      top: 0px;
+      left: 0px;
+      background-image: url(../../img/bg-hit-tablet.svg);
+
+      width: 61px;
+      height: 61px;
+    }
+
+    &::after {
+      top: 8px;
+      left: 6px;
+    }
+  }
+
+  .price__tariff-title {
+    font-size: 16px;
+
+    padding-bottom: 0px;
+  }
+
+  .price__tariff-cost {
+    font-size: 18px;
+    line-height:25px
+  }
+
+  .price__option {
+    min-width: 138px;
+
+    padding-left: 14px;
+    padding-top: 12px;
+  }
+
+  .price__option-title {
+    font-weight: 400;
+  }
+
+  .price__option-name {
+    display: none;
+  }
+
+  .price__option-on::before {
+    top: -8px;
+    left: 48px;
+  }
+
+  .price__option-off::before {
+    top: -12px;
+    left: 49px;
+  }
+
+  .price__toggles {
+    display: none;
+  }
+}
+
+@media (min-width: @desktop-width) {
+  .price {
+    padding-top: 145px;
+    padding-bottom: 95px;
+  }
+
+  .price__wrapper {
+    width: 940px;
+    margin: 0 auto;
+  }
+
+  .price__tariff-name {
+    padding-top: 16px;
+    padding-bottom: 20px;
+  }
+
+  .price__tariff-name--hit {
+
+    &::before {
+      top: 0px;
+      left: 0px;
+      background-image: url(../../img/bg-hit.svg);
+
+      width: 72px;
+      height: 72px;
+    }
+
+    &::after {
+      top: 17px;
+      left: 10px;
+    }
+  }
+
+  .price__tariff-title {
+    font-size: 18px;
+
+    padding-bottom: 4px;
+  }
+
+  .price__tariff-cost {
+    font-size: 24px;
+    line-height:25px
+  }
+
+  .price__option {
+    min-width: 210px;
+
+    padding-left: 22px;
+    padding-top: 17px;
+    padding-bottom: 18px;
+  }
+
+  .price__option-title {
+    font-size: 18px;
+  }
+
+  .price__option-on::before {
+    top: -8px;
+    left: 80px;
+  }
+
+  .price__option-off::before {
+    top: -12px;
+    left: 81px;
+  }
+}
