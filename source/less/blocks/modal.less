@@ -1,0 +1,131 @@
+.modal {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+
+  position: fixed;
+  left: 0;
+  top: 0;
+  width: 100%;
+  height: 100%;
+}
+
+.modal__wrapper {
+  width: 320px;
+  margin: 0 auto;
+  padding-top: 10px;
+
+  background-color: @color-btn-downloud;
+  box-shadow: 0 7px 15px 0 @color-shadow;
+}
+
+.modal__titel {
+  margin: 30px auto 26px;
+  padding-left: 27px;
+  padding-right: 30px;
+  font-size: 18px;
+  line-height: 24px;
+  color: @color-title;
+  text-align: center;
+}
+
+.modal__text {
+  margin: 0 auto;
+  padding-left: 26px;
+  padding-right: 29px;
+  margin-bottom: 31px;
+  line-height: 24px;
+  font-weight: 400;
+  text-align: center;
+
+  &--error {
+    padding-left: 21px;
+    padding-right: 23px;
+  }
+}
+
+.modal__btn-wrapper {
+  background-color: @bg-advantage;
+  padding-top: 48px;
+  padding-bottom: 52px;
+}
+
+.modal__btn-sent {
+  margin: 0 auto;
+}
+
+.modal__btn-error {
+  margin: 0 auto;
+  margin-top: 38px;
+  margin-bottom: 50px;
+}
+
+.modal--request-sent {
+  display: none;
+}
+
+.modal--error {
+  display: none;
+}
+
+@media (min-width: @tablet-width) {
+  .modal__wrapper {
+    width: 460px;
+    padding-top: 6px;
+  }
+
+  .modal__titel {
+    margin: 30px auto 22px;
+    padding-left: 99px;
+    padding-right: 101px;
+    font-size: 30px;
+    line-height: 40px;
+  }
+
+  .modal__text {
+    padding-left: 76px;
+    padding-right: 78px;
+    margin-bottom: 34px;
+
+    font-size: 18px;
+  }
+
+  .modal__btn-error {
+    margin-bottom: 52px;
+  }
+}
+
+@media (min-width: @desktop-width) {
+  .modal__wrapper {
+    width: 780px;
+    padding-top: 11px;
+  }
+
+  .modal__titel {
+    margin: 30px auto 22px;
+    padding-left: 190px;
+    padding-right: 192px;
+  }
+
+  .modal__text {
+    padding-left: 193px;
+    padding-right: 195px;
+    margin-bottom: 0;
+  }
+
+  .modal__btn-wrapper {
+    margin-top: 39px;
+  }
+
+  .modal__btn-error-wrapper {
+    background-color: @bg-advantage;
+    padding-top: 47px;
+    padding-bottom: 53px;
+    margin-top: 63px;
+  }
+
+  .modal__btn-error {
+    margin-top: 0;
+    margin-bottom: 0;
+  }
+}

@@ -1,10 +1,12 @@
 .btn {
+  font-family: @font-main;
   font-size: 18px;
   line-height: 18px;
   font-weight: 700;
   text-decoration: none;
   text-align: center;
 
+  display: block;
   border: solid 3px;
   border-radius: 150px;
 }
@@ -13,6 +15,134 @@
   color: @color-btn-downloud;
   border-color: @color-btn-downloud;
 
-  display: block;
   padding: 14px 13px 17px 14px;
+}
+
+.btn--gallery {
+  color: @color-hover;
+  border-color: @color-hover;
+  background-color: transparent;
+
+  padding: 14px 88px 17px 88px;
+
+  &:hover,
+  &:focus {
+    color: @color-menu;
+    background-color: @color-hover;
+  }
+
+  &:active {
+    color: @color-active;
+    background-color: @color-hover;
+  }
+}
+
+.btn--clear {
+  color: @color-btn-clear;
+  border-color: @color-btn-clear;
+  background-color: transparent;
+
+  padding: 14px 101px 17px 101px;
+
+  &:hover,
+  &:focus {
+    color: @color-btn-clear-hover;
+    border-color: @color-btn-clear-hover;
+  }
+
+  &:active {
+    color: @color-active;
+    border-color: transparent;
+    background-color: @color-btn-clear-hover;
+  }
+}
+
+.btn--submit {
+  padding: 19px 46px 20px 43px;
+  border-color: @color-btn-submit;
+  border-radius: 3px;
+  font-weight: 700;
+  color: @color-menu;
+  text-transform: uppercase;
+
+  background-color: @color-btn-submit;
+
+  &:hover,
+  &:focus {
+    border-color: @color-btn-submit-hover;
+    background-color: @color-btn-submit-hover;
+  }
+
+  &:active {
+    color: @color-active;
+    border-color: @color-btn-submit-hover;
+    background-color: @color-btn-submit-hover;
+  }
+
+  &:disabled {
+    border-color: @color-border;
+    background-color: @color-border;
+  }
+}
+
+.btn--error {
+  padding: 19px 125px 20px 123px;
+  border-color: @color-btn-submit;
+  border-radius: 3px;
+  font-weight: 700;
+  color: @color-menu;
+  text-transform: uppercase;
+
+  background-color: @color-btn-submit;
+
+  &:hover,
+  &:focus {
+    border-color: @color-btn-submit-hover;
+    background-color: @color-btn-submit-hover;
+  }
+
+  &:active {
+    color: @color-active;
+    border-color: @color-btn-submit-hover;
+    background-color: @color-btn-submit-hover;
+  }
+}
+
+.btn--sent {
+  padding: 19px 65px 20px 64px;
+  border-color: @color-btn-submit;
+  border-radius: 3px;
+  font-weight: 700;
+  color: @color-menu;
+  text-transform: uppercase;
+
+  background-color: @color-btn-submit;
+
+  &:hover,
+  &:focus {
+    border-color: @color-btn-submit-hover;
+    background-color: @color-btn-submit-hover;
+  }
+
+  &:active {
+    color: @color-active;
+    border-color: @color-btn-submit-hover;
+    background-color: @color-btn-submit-hover;
+  }
+}
+
+@media (min-width: @tablet-width) {
+  .btn--sent {
+    padding: 19px 74px 20px 73px;
+  }
+
+  .btn--error {
+    padding: 19px 135px 20px 133px;
+  }
+}
+
+@media (min-width: @desktop-width) {
+  .btn--sent {
+    padding: 19px 155px 20px 154px;
+  }
 }
