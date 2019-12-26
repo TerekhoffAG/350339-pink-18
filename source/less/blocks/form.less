@@ -1,0 +1,687 @@
+.form__name {
+  width: 280px;
+  padding: 20px 20px 25px;
+  margin: 0 auto;
+  border: 0;
+}
+
+.form__title {
+  display: block;
+  margin-bottom: 17px;
+
+  color: @color-hover;
+  text-transform: uppercase;
+  font-weight: 400;
+  line-height: 30px;
+}
+
+.form__title span {
+  display: block;
+  padding-left: 22px;
+  margin-bottom: 5px;
+}
+
+.form__input-name {
+  display: block;
+  width: 241px;
+  padding: 14px 15px 15px 20px;
+
+  font-family: inherit;
+  font-size: 18px;
+  line-height: 30px;
+  font-weight: 400;
+  color: @color-text;
+  border: 2px solid @color-border;
+
+  &::placeholder {
+    color: @color-text;
+  }
+
+  &:hover {
+    border-color: @color-text;
+    outline: 0;
+  }
+
+  &:focus,
+  &:active {
+    border-color: @color-hover;
+    outline: 0;
+  }
+}
+
+//#############################################################//
+.form__progress-wrapper {
+  background-color: @bg-advantage;
+}
+
+.form__progress {
+  position: relative;
+  width: 280px;
+  padding: 112px 20px 0;
+  margin: 0 auto;
+  border: 0;
+}
+
+.form__progress-description {
+  position: absolute;
+  width: 220px;
+  top: 38px;
+  left: 47px;
+  color: @color-hover;
+  line-height: 18px;
+  font-weight: 400;
+  text-align: center;
+  text-transform: uppercase;
+  background-color: @bg-advantage;
+}
+
+.form__title-progress {
+  position: relative;
+  display: block;
+  padding: 5px 0 5px 69px;
+  margin-bottom: 42px;
+  cursor: pointer;
+  font-size: 18px;
+  font-weight: 400;
+  line-height: 30px;
+}
+
+.form__check-indicator {
+  content: "";
+  position: absolute;
+  top: 1px;
+  left: 0;
+  width: 35px;
+  height: 35px;
+  background-color: @color-menu;
+  border: 2px solid @color-border;
+}
+
+input[type="checkbox"]:checked + .form__check-indicator {
+  background: @color-menu url("../../img/icon-yes-red.svg") no-repeat center;
+}
+
+.form__title-progress:hover .form__check-indicator,
+input[type="checkbox"]:focus + .form__check-indicator {
+  border-color: @color-text;
+}
+
+.form__title-progress:active .form__check-indicator {
+  border-color: @color-hover;
+}
+
+//#############################################################//
+
+.form__contacts {
+  width: 280px;
+  padding: 32px 20px 25px;
+  margin: 0 auto;
+  border: 0;
+}
+
+.form__contacts-description {
+  display: none;
+}
+
+.form__title-contacts {
+  display: block;
+  margin-bottom: 17px;
+
+  color: @color-hover;
+  text-transform: uppercase;
+  font-weight: 400;
+  line-height: 30px;
+}
+
+.form__title-contacts span {
+  display: block;
+  padding-left: 22px;
+  margin-bottom: 5px;
+}
+
+.form__input-contacts {
+  display: block;
+  width: 241px;
+  padding: 14px 15px 15px 20px;
+
+  font-family: inherit;
+  font-size: 18px;
+  line-height: 30px;
+  font-weight: 400;
+  color: @color-text;
+  border: 2px solid @color-border;
+
+  &::placeholder {
+    color: @color-text;
+  }
+
+  &:hover {
+    border-color: @color-text;
+    outline: 0;
+  }
+
+  &:focus,
+  &:active {
+    border-color: @color-hover;
+    outline: 0;
+  }
+}
+
+//#############################################################//
+.form__app-wrapper {
+  background-color: @bg-advantage;
+}
+
+.form__app {
+  position: relative;
+  width: 280px;
+  padding: 108px 20px 7px;
+  margin: 0 auto;
+  border: 0;
+}
+
+.form__app-description {
+  position: absolute;
+  width: 220px;
+  top: 38px;
+  left: 47px;
+  color: @color-hover;
+  line-height: 18px;
+  font-weight: 400;
+  text-align: center;
+  text-transform: uppercase;
+  background-color: @bg-advantage;
+}
+
+.form__title-app {
+  position: relative;
+  display: block;
+  padding: 5px 0 5px 69px;
+  margin-bottom: 35px;
+  cursor: pointer;
+  font-size: 18px;
+  font-weight: 400;
+  line-height: 30px;
+}
+
+.form__radio-indicator {
+  content: "";
+  position: absolute;
+  top: 1px;
+  left: 0;
+  width: 35px;
+  height: 35px;
+  background-color: @color-menu;
+  border: 2px solid @color-border;
+  border-radius: 50%;
+}
+
+input[type="radio"]:checked + .form__radio-indicator::before {
+  content: "";
+  position: absolute;
+  top: 10px;
+  left: 10px;
+  width: 15px;
+  height: 15px;
+  background-color: @color-hover;
+  border-radius: 50%;
+}
+
+.form__title-app:hover .form__radio-indicator {
+  border-color: @color-text;
+}
+
+.form__title-app:active .form__radio-indicator,
+input[type="radio"]:focus + .form__radio-indicator {
+  border-color: @color-hover;
+}
+
+//#############################################################//
+
+.form__emotion {
+  position: relative;
+  width: 280px;
+  padding: 72px 20px 44px;
+  margin: 0 auto;
+  border: 0;
+}
+
+.form__emotion-description {
+  position: absolute;
+  width: 220px;
+  top: 38px;
+  left: 47px;
+  color: @color-hover;
+  line-height: 18px;
+  font-weight: 400;
+  text-align: center;
+  text-transform: uppercase;
+}
+
+.form__entry-field {
+  min-width: 240px;
+  min-height: 169px;
+  padding: 14px 18px;
+  border: 2px solid @color-border;
+
+  font-family: inherit;
+  font-size: 18px;
+  line-height: 30px;
+  font-weight: 400;
+  color: @color-text;
+
+  &::placeholder {
+    color: @color-text;
+  }
+
+  &:hover {
+    border-color: @color-text;
+    outline: 0;
+  }
+
+  &:focus,
+  &:active {
+    border-color: @color-hover;
+    outline: 0;
+  }
+}
+
+.form__btn-wrapper {
+  width: 100%;
+
+  order: 2; ////////
+}
+
+.form__btn {
+  margin: 0 auto;
+}
+
+.form__footnote {
+  margin: 40px auto 21px;
+  font-weight: 400;
+  text-align: center;
+  text-transform: uppercase;
+}
+
+.form__star {
+  color: @color-hover;
+}
+
+.form__elem-text {
+  display: none;
+}
+
+@media (min-width: @tablet-width) {
+  .form {
+    display: flex;
+    flex-direction: column;
+  }
+
+  .form__name {
+    width: 622px;
+    padding: 20px 20px 6px;
+    margin: 0 auto;
+    border: 0;
+  }
+
+  .form__title {
+    margin-bottom: 52px;
+  }
+
+  .form__title span {
+    display: inline;
+    padding-left: 0;
+    padding-right: 15px;
+  }
+
+  .form__title:last-child span {
+    padding-right: 14px;
+  }
+
+  .form__input-name {
+    display: inline-block;
+    width: 486px;
+  }
+
+  .form__title:nth-child(2) .form__input-name {
+    width: 526px;
+  }
+
+  .form__title:last-child .form__input-name {
+    width: 487px;
+  }
+
+  //#############################################################//
+  .form__app-wrapper {
+    background-color: transparent;
+  }
+
+  .form__app {
+    width: 500px;
+    padding: 43px 58px 19px 58px;
+    margin-bottom: 57px;
+
+    border: 2px solid @color-border;
+  }
+
+  .form__app-description {
+    position: static;
+    width: 365px;
+    padding-left: 1px;
+
+    background-color: transparent;
+  }
+
+  .form__title-app {
+    padding-left: 59px;
+  }
+
+  //#############################################################//
+  .form__contacts {
+    width: auto;
+    padding: 33px 58px 1px;
+    margin-bottom: 57px;
+
+    border: 2px solid @color-border;
+    order: 1;
+  }
+
+  .form__contacts-description {
+    display: block;
+    padding: 0 32px 0 31px;
+    color: @color-hover;
+    line-height: 18px;
+    font-weight: 400;
+    text-align: center;
+    text-transform: uppercase;
+  }
+
+  .form__title-contacts {
+    display: flex;
+    flex-direction: column-reverse;
+    position: relative;
+
+    &--phone::after {
+      content: "";
+      position: absolute;
+      display: block;
+      right: 2px;
+      top: 6px;
+      width: 60px;
+      height: 59px;
+      background-color: @color-border;
+      background-repeat: no-repeat;
+      background-position: center;
+      background-image: url("../../img/icon-phone.svg");
+    }
+
+    &--mail::after {
+      content: "";
+      position: absolute;
+      display: block;
+      right: 2px;
+      top: 6px;
+      width: 60px;
+      height: 59px;
+      background-color: @color-border;
+      background-repeat: no-repeat;
+      background-position: center;
+      background-image: url("../../img/icon-mail.svg");
+    }
+  }
+
+  .form__title-contacts span {
+    display: block;
+    padding-left: 19px;
+    margin-top: 10px;
+    margin-bottom: 8px;
+  }
+
+  .form__input-contacts {
+    width: 400px;
+    margin-top: 4px;
+    padding: 14px 78px 15px 18px;
+  }
+
+  //#############################################################//
+  .form__progress-wrapper {
+    background-color: transparent;
+
+    order: 2;
+  }
+
+  .form__progress {
+    width: 500px;
+    padding: 43px 58px 6px 58px;
+    margin-bottom: 57px;
+
+    border: 2px solid @color-border;
+  }
+
+  .form__progress-description {
+    position: static;
+    width: auto;
+    padding: 0 32px 0 31px;
+
+    background-color: transparent;
+  }
+
+  .form__title-progress {
+    padding-left: 59px;
+  }
+
+  //#############################################################//
+  .form__emotion {
+    position: static;
+    width: auto;
+    padding: 37px 58px 47px;
+    margin-bottom: 67px;
+
+    border: 2px solid @color-border;
+    order: 2;
+  }
+
+  .form__emotion-description {
+    position: static;
+    width: auto;
+    padding: 0 39px 0 38px;
+  }
+
+  .form__entry-field {
+    min-width: 460px;
+    min-height: 161px;
+    padding: 14px 18px;
+  }
+
+  //#############################################################//
+  .form__btn-wrapper {
+    display: flex;
+    width: 620px;
+    align-items: center;
+    justify-content: space-between;
+    padding: 0;
+    margin: 0 auto;
+    margin-bottom: 50px;
+  }
+
+  .form__btn {
+    margin: 0;
+    padding-left: 54px;
+    padding-right: 55px;
+  }
+
+  .form__footnote {
+    margin: 0;
+    padding-top: 1px;
+    margin-right: -1px;
+  }
+}
+
+@media (min-width: @desktop-width) {
+  .form {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    width: 940px;
+    margin: 0 auto;
+  }
+
+  .form__name {
+    width: auto;
+    margin: 0;
+    padding: 33px 0 0;
+  }
+
+  .form__title {
+    margin-bottom: 54px;
+  }
+
+  .form__title:nth-child(2) {
+    margin-bottom: 52px;
+  }
+
+  .form__title span {
+    display: inline;
+    padding-left: 0;
+    padding-right: 15px;
+  }
+
+  .form__title:last-child span {
+    padding-right: 15px;
+  }
+
+  .form__input-name {
+    display: inline-block;
+    width: 301px;
+  }
+
+  .form__title:nth-child(2) .form__input-name {
+    width: 341px;
+  }
+
+  .form__title:last-child .form__input-name {
+    width: 302px;
+  }
+
+  //#############################################################//
+  .form__app-wrapper {
+    background-color: transparent;
+  }
+
+  .form__app {
+    width: 431px;
+    padding: 45px 0 21px 0;
+    margin: 18px 0 0 0;
+
+    border: 2px solid @color-border;
+  }
+
+  .form__app-description {
+    padding-left: 0;
+    padding-top: 2px;
+  }
+
+  .form__title-app {
+    padding-left: 59px;
+    margin-left: 74px;
+    margin-bottom: 34px;
+  }
+
+  //#############################################################//
+  .form__contacts {
+    padding: 33px 58px 1px;
+    margin-top: 3px;
+    margin-bottom: 57px;
+  }
+
+  .form__contacts-wrapper {
+    width: 820px;
+    display: flex;
+    justify-content: space-between;
+  }
+
+  .form__title-contacts {
+    width: 375px;
+    margin-bottom: 4px;
+
+    &--phone::after {
+      top: 3px;
+    }
+
+    &--mail::after {
+      top: 3px;
+    }
+  }
+
+  .form__input-contacts {
+    width: 275px;
+    margin-top: 1px;
+  }
+
+  //#############################################################//
+  .form__progress-wrapper {
+    margin-bottom: 57px;
+  }
+
+  .form__progress {
+    width: auto;
+    margin: 0;
+    padding: 43px 0 13px 0;
+  }
+
+  .form__progress-inner {
+    width: 878px;
+    margin: 0 auto;
+
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: row;
+    justify-content: flex-start;
+    padding-left: 58px;
+  }
+
+  .form__title-progress {
+    width: 23%;
+    margin-right: 54px;
+
+    &:nth-child(even) {
+      order: 1;
+    }
+
+    &:nth-child(6n-3),
+    &:nth-child(6n-2) {
+      margin-right: 34px;
+    }
+
+    &:nth-child(6n-1),
+    &:nth-child(6n) {
+      margin-right: 0;
+    }
+  }
+
+  //#############################################################//
+  .form__emotion {
+    padding-top: 34px;
+    padding-bottom: 39px;
+    margin-bottom: 65px;
+  }
+
+  .form__entry-field {
+    min-width: 780px;
+    min-height: 96px;
+  }
+  //#############################################################//
+  .form__btn-wrapper {
+    width: 940px;
+    margin-bottom: 0;
+  }
+
+  .form__footnote {
+    margin-right: 1px;
+  }
+
+  .form__elem-text {
+    display: inline;
+  }
+}

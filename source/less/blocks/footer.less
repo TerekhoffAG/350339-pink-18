@@ -1,17 +1,163 @@
-.page-footer {
-  text-align: center;
+.footer {
+  padding-top: 40px;
+  padding-bottom: 32px;
 }
 
-.page-footer__logo--desktop {
+.foter--main-page {
   display: none;
 }
 
+.footer__logo {
+  display: block;
+  width: 148px;
+  margin: 0 auto;
+
+  &:hover,
+  &:focus {
+    fill: @color-hover; //исправить
+  }
+
+  &:active {
+    opacity: 0.3;
+  }
+}
+
+.footer__logo--desktop {
+  display: none;
+}
+
+.footer__social-list {
+  .reset-block;
+  list-style: none;
+
+  display: flex;
+  justify-content: space-between;
+  width: 177px;
+  margin: 0 auto;
+  padding-top: 36px;
+  padding-bottom: 36px;
+}
+
+.footer__social-link {
+  display: block;
+
+  border: 3px solid @color-btn-clear;
+  border-radius: 100%;
+  fill: @color-hover;
+
+  &:hover,
+  &:focus {
+    border-color: @color-text;
+  }
+
+  &:active {
+    opacity: 0.1;
+  }
+}
+
+.footer__social-link--twitter {
+  padding: 15px 13px 11px 14px;
+}
+
+.footer__social-link--facebook {
+  padding: 12px 18px 10px 18px;
+}
+
+.footer__social-link--youtube {
+  padding: 13px 14px 13px 17px;
+}
+
+.footer__copyright {
+  display: flex;
+  justify-content: space-between;
+  width: 142px;
+  margin: 0 auto;
+}
+
+.footer__copyright-text {
+  font-weight: 400;
+
+  padding-top: 8px;
+  padding-left: 5px;
+}
+
+.footer__copyright-link {
+  width: 41px;
+  fill: @color-hover;
+
+  &:hover,
+  &:focus {
+    fill: @color-text;
+  }
+
+  &:active {
+    fill: @color-text;
+    opacity: 0.3;
+  }
+}
+
+@media (min-width: @tablet-width) {
+  .footer {
+    display: flex;
+    justify-content: space-between;
+    margin: 0 auto;
+    padding-top: 36px;
+    padding-bottom: 35px;
+    padding-left: 20px;
+    padding-right: 20px;
+  }
+
+  .footer__logo {
+    width: 147px;
+    margin: 0;
+  }
+
+  .footer__social-list {
+    margin: 0 12px 0 0;
+    padding-top: 3px;
+    padding-bottom: 0;
+  }
+
+  .footer__copyright {
+    width: auto;
+    margin: 0 -7px 0 0;
+  }
+
+  .footer__copyright-text {
+    padding-top: 19px;
+    padding-right: 7.5px;
+    padding-left: 6px;
+  }
+
+  .footer__copyright-link {
+    padding-top: 11px;
+  }
+}
+
 @media (min-width: @desktop-width) {
-  .page-footer__logo--mobile {
+  .footer {
+    padding-top: 70px;
+    padding-bottom: 71px;
+    padding-left: 10px;
+    padding-right: 10px;
+  }
+
+  .footer__logo--mobile {
     display: none;
   }
 
-  .page-footer__logo--desktop {
+  .footer__logo--desktop {
     display: inline;
+  }
+
+  .footer__social-list {
+    margin: 1px 0 0 14.5px;
+  }
+
+  .footer__copyright-text {
+    font-size: 18px;
+    padding-top: 16px;
+    padding-right: 7px;
+    padding-left: 0;
   }
 }
