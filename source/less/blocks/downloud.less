@@ -43,55 +43,27 @@
 
 .downloud__btn {
   margin-right: 1px;
-  margin-bottom: 32px;
+  margin-bottom: 31px;
 }
 
 .downloud__list {
-  .reset-block();
   list-style: none;
+
+  display: flex;
+  flex-wrap: wrap;
+  align-items: flex-end;
+  width: 205px;
+
+  margin: 0 auto 18px;
+  padding: 0;
 }
 
-.downloud__link {
-  position: relative;
+.downloud__item:nth-child(2) {
+  margin: 0 38px 1px 34px
+}
 
-  &--apple::before {
-    content: "";
-    display: block;
-    position: absolute;
-    top: 0;
-    left: 38px;
-    background-image: url("../../img/logo-apple.svg");
-    background-repeat: no-repeat;
-
-    width: 47px;
-    height: 56px;
-  }
-
-  &--google::before {
-    content: "";
-    display: block;
-    position: absolute;
-    top: 8px;
-    left: 119px;
-    background-image: url("../../img/logo-android.svg");
-    background-repeat: no-repeat;
-
-    width: 43px;
-    height: 47px;
-  }
-
-  &--ms::before {
-    content: "";
-    display: block;
-    position: absolute;
-    top: 12px;
-    left: 199px;
-    background-image: url("../../img/logo-microsoft.svg");
-    background-repeat: no-repeat;
-
-    width: 44px;
-    height: 41px;
-  }
+.downloud__item:last-child {
+  margin-bottom: 3px;
 }
 
 .downloud__text {
@@ -99,7 +71,6 @@
   text-align: center;
 
   margin: 0 5px 0 5px;
-  padding-top: 78px;
   padding-bottom: 30px;
 }
 
@@ -143,6 +114,7 @@
     margin: 0 auto;
     padding-top: 31px;
     position: relative;
+    z-index: 10;
   }
 
   .downloud__btn {
@@ -151,14 +123,23 @@
   }
 
   .downloud__list {
-    margin-left: 8px;
+    width: 206px;
+    margin-left: 46px;
+  }
+
+  .downloud__item:nth-child(2) {
+    margin: 0 36px 3px 37px
+  }
+
+  .downloud__item:last-child {
+    margin-bottom: 3px;
   }
 
   .downloud__text {
     font-size: 18px;
     width: 300px;
     margin: 0;
-    padding-top: 93px;
+    padding-top: 14px;
   }
 }
 
@@ -191,7 +172,6 @@
   .downloud__wrapper-text {
     width: 940px;
     padding-top: 52px;
-    position: static;
   }
 
   .downloud__btn {
@@ -202,10 +182,18 @@
   }
 
   .downloud__list {
-    margin-left: 9px;
+    margin-left: 47px;
+  }
+
+  .downloud__item:nth-child(2) {
+    margin: 0 38px 2px 35px
+  }
+
+  .downloud__item:last-child {
+    margin-bottom: 4px;
   }
 
   .downloud__text {
-    padding-top: 111px;
+    padding-top: 32px;
   }
 }

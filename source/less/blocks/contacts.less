@@ -35,6 +35,19 @@
   color: @color-hover;
 }
 
+.contacts__link--mail {
+  &:hover,
+  &:focus {
+    color: @color-text;
+    text-decoration: underline;
+  }
+
+  &:active {
+    opacity: 0.3;
+    text-decoration: none;
+  }
+}
+
 .contacts__address {
   font-size: 24px;
   line-height: 29px;
