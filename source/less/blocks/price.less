@@ -96,35 +96,36 @@
 
 .price__option-on {
   position: relative;
+}
 
-  &::before {
-    content: "";
-    position: absolute;
-    display: block;
-    width: 35px;
-    height: 22px;
-    top: -26px;
-    left: 208px;
-    background-image: url("../../img/icon-yes.svg");
-    background-repeat: no-repeat;
-    background-size: contain;
-  }
+.price__option-icon-on {
+  position: absolute;
+  display: block;
+  width: 35px;
+  height: 22px;
+  top: -26px;
+  left: 206px;
+}
+
+.price__option-icon-on path {
+  fill: @color-on;
 }
 
 .price__option-off {
   position: relative;
+}
 
-  &::before {
-    content: "";
-    position: absolute;
-    display: block;
-    width: 27px;
-    height: 27px;
-    top: -30px;
-    left: 210px;
-    background-image: url("../../img/icon-no.svg");
-    background-repeat: no-repeat;
-  }
+.price__option-icon-off {
+  position: absolute;
+  display: block;
+  width: 27px;
+  height: 27px;
+  top: -30px;
+  left: 209px;
+}
+
+.price__option-icon-off path {
+  fill: @color-off;
 }
 
 .price__toggles {
@@ -226,14 +227,14 @@
     display: none;
   }
 
-  .price__option-on::before {
+  .price__option-icon-on {
     top: -8px;
-    left: 48px;
+    left: 46px;
   }
 
-  .price__option-off::before {
+  .price__option-icon-off {
     top: -12px;
-    left: 49px;
+    left: 50px;
   }
 
   .price__toggles {
@@ -296,13 +297,13 @@
     font-size: 18px;
   }
 
-  .price__option-on::before {
+  .price__option-icon-on {
     top: -8px;
-    left: 80px;
+    left: 78px;
   }
 
-  .price__option-off::before {
-    top: -12px;
+  .price__option-icon-off {
+    top: -13px;
     left: 81px;
   }
 }
