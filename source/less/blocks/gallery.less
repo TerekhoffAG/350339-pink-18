@@ -15,6 +15,8 @@
 
 .gallery__panorama {
   position: relative;
+  width: 320px;
+  margin: 0 auto;
 }
 
 .gallery__panorama-title {
@@ -194,12 +196,27 @@
     display: inline;
   }
 
+  .gallery__panorama {
+    max-width: 700px;
+    width: 100%;
+  }
+
   .gallery__panorama-title {
     top: 57px;
   }
 
+  .gallery__panorama-link {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin: 0 auto;
+    overflow: hidden;
+  }
+
   .gallery__image-hit {
     min-height: 509px;
+    min-width: 700px;
+    max-width: 100%;
   }
 
   .gallery__panorama-block {
@@ -292,8 +309,13 @@
     right: 10px;
   }
 
+  .gallery__panorama {
+    max-width: 1200px;
+  }
+
   .gallery__image-hit {
     min-height: 506px;
+    min-width: 1200px;
   }
 
   .gallery__panorama-block {
