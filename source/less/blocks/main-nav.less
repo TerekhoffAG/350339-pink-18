@@ -1,5 +1,10 @@
 .main-nav {
   position: relative;
+  background-color: @color-text;
+}
+
+.main-nav__toggle svg {
+  fill: @color-menu;
 }
 
 .main-nav__toggle {
@@ -17,8 +22,8 @@
   cursor: pointer;
   z-index: 10;
 
-  &:hover path,
-  &:focus path {
+  &:hover svg,
+  &:focus svg {
     fill: @color-hover;
   }
 
@@ -91,6 +96,10 @@
 }
 
 @media (min-width: @desktop-width) {
+  .main-nav {
+    background-color: transparent;
+  }
+
   .main-nav--closed .main-nav__list,
   .main-nav__list {
     display: flex;

@@ -1,5 +1,4 @@
 .page-header {
-  background-color: @color-text;
   position: relative;
 }
 
@@ -17,6 +16,7 @@
 .page-header__wrapper-logo {
   border-bottom: 1px solid @color-title;
   padding: 22px 20px 20px 20px;
+  background-color: @color-text;
 
   &--closed {
     padding-bottom: 17px;
@@ -35,13 +35,17 @@
   width: 75px;
 }
 
+.page-header__logo svg {
+  fill: @color-menu;
+}
+
 .page-header__logo[href] {
-  &:hover path,
-  &:focus path {
+  &:hover svg,
+  &:focus svg {
     fill: @color-hover;
   }
 
-  &:active path {
+  &:active svg {
     fill: @color-active;
   }
 }

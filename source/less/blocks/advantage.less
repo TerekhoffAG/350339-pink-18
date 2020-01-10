@@ -21,7 +21,7 @@
 
 .advantage__wrapper-bg {
   background-color: @bg-advantage;
-  background-image: url("../../img/bg-triangle-white.svg");
+  background-image: url("../img/bg-triangle-white.svg");
   background-repeat: no-repeat;
   //background-position: top center;
   background-size: contain;
@@ -33,13 +33,13 @@
   padding-top: 77px;
   padding-bottom: 287px;
 
-  background-image: url("../../img/iphone-screen-mobile@1x.png");
+  background-image: url("../img/iphone-screen-mobile@1x.png");
   background-repeat: no-repeat;
   background-position: 50% 109%;
   background-size: 157px 319px;
 
   @media (min-resolution: @retina-dpi), (min-resolution: @retina-dppx) {
-    background-image: url("../../img/iphone-screen-mobile@2x.png");
+    background-image: url("../img/iphone-screen-mobile@2x.png");
   }
 }
 
@@ -98,12 +98,12 @@
     padding-bottom: 9px;
     text-align: left;
 
-    background-image: url("../../img/iphone-screen-3-tablet@1x.png");
+    background-image: url("../img/iphone-screen-3-tablet@1x.png");
     background-position: -3px 4px;
     background-size: 268px 481px;
 
     @media (min-resolution: @retina-dpi), (min-resolution: @retina-dppx) {
-      background-image: url("../../img/iphone-screen-3-tablet@2x.png");
+      background-image: url("../img/iphone-screen-3-tablet@2x.png");
     }
   }
 
@@ -148,22 +148,6 @@
     width: 202px;
     height: 202px;
 
-    &::before {
-      content: "";
-      position: absolute;
-      top: -55px;
-      left: -18px;
-      display: block;
-      width: 238px;
-      height: 276px;
-      opacity: 0.3;
-
-      background-image: url("../../img/icon-timer.svg");
-      background-repeat: no-repeat;
-      background-position: center;
-      background-size: cover;
-    }
-
     &::after {
       content: "";
       position: absolute;
@@ -175,6 +159,17 @@
       border: 14px solid @color-hover;
       border-radius: 100%;
     }
+  }
+
+  .advantage__timer-icon {
+    position: absolute;
+    top: -55px;
+    left: -18px;
+    display: block;
+    width: 238px;
+    height: 276px;
+
+    fill: @color-timer;
   }
 
   .advantage__wrapper-effect {
@@ -307,19 +302,18 @@
     width: 253px;
     height: 253px;
 
-    &::before {
-      position: absolute;
-      top: -70px;
-      left: -22px;
-      width: 298px;
-      height: 345px;
-    }
-
     &::after {
       width: 220.5px;
       height: 221px;
       border: 16px solid @color-hover;
     }
+  }
+
+  .advantage__timer-icon {
+    top: -70px;
+    left: -22px;
+    width: 298px;
+    height: 345px;
   }
 
   .advantage__wrapper-effect {

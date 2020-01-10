@@ -62,13 +62,13 @@
   width: 320px;
   margin: 0 auto;
 
-  background-image: url("../../img/bg-map-mobile@1x.png");
+  background-image: url("../img/bg-map-mobile@1x.png");
   background-position: bottom;
   background-repeat: no-repeat;
   background-size: cover;
 
   @media (min-resolution: @retina-dpi), (min-resolution: @retina-dppx) {
-    background-image: url("../../img/bg-map-mobile@2x.jpg");
+    background-image: url("../img/bg-map-mobile@2x.jpg");
   }
 
   &::after {
@@ -80,23 +80,18 @@
     width: 320px;
     height: 62px;
 
-    background-image: url("../../img/bg-triangle-white-footer.svg");
+    background-image: url("../img/bg-triangle-white-footer.svg");
     background-position: top center;
     background-repeat: no-repeat;
     background-size: 130%;
   }
+}
 
-  &::before {
-    content: "";
-    position: absolute;
-    top: 105px;
-    left: 142px;
-    display: block;
-    width: 36px;
-    height: 36px;
-
-    background-image: url("../../img/icon-map-marker.svg");
-  }
+.contacts__map-marker {
+  position: absolute;
+  top: 105px;
+  left: 142px;
+  display: block;
 }
 
 @media (min-width: @tablet-width) {
@@ -148,41 +143,26 @@
     height: 375px;
     width: 660px;
 
-    background-image: url("../../img/bg-map-tablet@1x.jpg");
+    background-image: url("../img/bg-map-tablet@1x.jpg");
     background-position: left bottom -113px;
-    background-repeat: no-repeat;
-    background-size: cover;
 
     @media (min-resolution: @retina-dpi), (min-resolution: @retina-dppx) {
-      background-image: url("../../img/bg-map-tablet@2x.jpg");
+      background-image: url("../img/bg-map-tablet@2x.jpg");
     }
 
     &::after {
-      content: "";
-      position: absolute;
-      top: 0;
-      left: 0;
-      display: block;
       width: 660px;
       height: 123px;
 
-      background-image: url("../../img/bg-triangle-white-footer.svg");
+      background-image: url("../img/bg-triangle-white-footer.svg");
       background-position: top -54px center;
-      background-repeat: no-repeat;
       background-size: cover;
     }
+  }
 
-    &::before {
-      content: "";
-      position: absolute;
-      top: 195px;
-      left: 312px;
-      display: block;
-      width: 36px;
-      height: 36px;
-
-      background-image: url("../../img/icon-map-marker.svg");
-    }
+  .contacts__map-marker {
+    top: 195px;
+    left: 312px;
   }
 }
 
@@ -225,25 +205,22 @@
     height: 522px;
     width: 960px;
 
-    background-image: url("../../img/bg-map-desktop@1x.jpg");
+    background-image: url("../img/bg-map-desktop@1x.jpg");
     background-position: left bottom -113px;
 
     @media (min-resolution: @retina-dpi), (min-resolution: @retina-dppx) {
-      background-image: url("../../img/bg-map-desktop@2x.jpg");
+      background-image: url("../img/bg-map-desktop@2x.jpg");
     }
 
     &::after {
       width: 960px;
 
-      background-image: url("../../img/bg-triangle-white-footer.svg");
       background-position: top center;
-      background-repeat: no-repeat;
-      background-size: cover;
     }
+  }
 
-    &::before {
-      top: 283px;
-      left: 462px;
-    }
+  .contacts__map-marker {
+    top: 283px;
+    left: 462px;
   }
 }
