@@ -24,11 +24,11 @@
 .form__input-name {
   display: block;
   width: 241px;
-  padding: 14px 15px 15px 20px;
+  padding: 17px 15px 18px 20px;
 
   font-family: inherit;
   font-size: 18px;
-  line-height: 30px;
+  line-height: 18px;
   font-weight: 400;
   color: @color-text;
   border: 2px solid @color-border;
@@ -98,7 +98,7 @@
 }
 
 input[type="checkbox"]:checked + .form__check-indicator {
-  background: @color-menu url("../../img/icon-yes-red.svg") no-repeat center;
+  background: @color-menu url("../img/icon-yes-red.svg") no-repeat center;
 }
 
 .form__title-progress:hover .form__check-indicator,
@@ -139,14 +139,18 @@ input[type="checkbox"]:focus + .form__check-indicator {
   margin-bottom: 5px;
 }
 
+.form__title-contacts svg {
+  display: none;
+}
+
 .form__input-contacts {
   display: block;
   width: 241px;
-  padding: 14px 15px 15px 20px;
+  padding: 17px 15px 18px 20px;
 
   font-family: inherit;
   font-size: 18px;
-  line-height: 30px;
+  line-height: 18px;
   font-weight: 400;
   color: @color-text;
   border: 2px solid @color-border;
@@ -289,7 +293,7 @@ input[type="radio"]:focus + .form__radio-indicator {
 .form__btn-wrapper {
   width: 100%;
 
-  order: 2; ////////
+  order: 2;
 }
 
 .form__btn {
@@ -368,6 +372,7 @@ input[type="radio"]:focus + .form__radio-indicator {
     position: static;
     width: 365px;
     padding-left: 1px;
+    margin: 0 auto;
 
     background-color: transparent;
   }
@@ -378,7 +383,7 @@ input[type="radio"]:focus + .form__radio-indicator {
 
   //#############################################################//
   .form__contacts {
-    width: auto;
+    width: 500px;
     padding: 33px 58px 1px;
     margin-bottom: 57px;
 
@@ -389,6 +394,7 @@ input[type="radio"]:focus + .form__radio-indicator {
   .form__contacts-description {
     display: block;
     padding: 0 32px 0 31px;
+    margin: 0 auto;
     color: @color-hover;
     line-height: 18px;
     font-weight: 400;
@@ -400,34 +406,6 @@ input[type="radio"]:focus + .form__radio-indicator {
     display: flex;
     flex-direction: column-reverse;
     position: relative;
-
-    &--phone::after {
-      content: "";
-      position: absolute;
-      display: block;
-      right: 2px;
-      top: 6px;
-      width: 60px;
-      height: 59px;
-      background-color: @color-border;
-      background-repeat: no-repeat;
-      background-position: center;
-      background-image: url("../../img/icon-phone.svg");
-    }
-
-    &--mail::after {
-      content: "";
-      position: absolute;
-      display: block;
-      right: 2px;
-      top: 6px;
-      width: 60px;
-      height: 59px;
-      background-color: @color-border;
-      background-repeat: no-repeat;
-      background-position: center;
-      background-image: url("../../img/icon-mail.svg");
-    }
   }
 
   .form__title-contacts span {
@@ -437,10 +415,27 @@ input[type="radio"]:focus + .form__radio-indicator {
     margin-bottom: 8px;
   }
 
+  .form__title-contacts svg {
+    display: block;
+    position: absolute;
+    right: 2px;
+    top: 6px;
+    padding: 20px 20px 20px;
+    background-color: @color-border;
+
+    fill: @color-hover;
+  }
+
+  .form__title-contacts .form__icon-mail-contacts {
+    padding: 23px 21px 23px;
+  }
+
   .form__input-contacts {
     width: 400px;
     margin-top: 4px;
-    padding: 14px 78px 15px 18px;
+    padding: 17px 78px 18px 18px;
+    background-color: transparent;
+    z-index: 10;
   }
 
   //#############################################################//
@@ -462,6 +457,7 @@ input[type="radio"]:focus + .form__radio-indicator {
     position: static;
     width: auto;
     padding: 0 32px 0 31px;
+    margin: 0 auto;
 
     background-color: transparent;
   }
@@ -473,7 +469,7 @@ input[type="radio"]:focus + .form__radio-indicator {
   //#############################################################//
   .form__emotion {
     position: static;
-    width: auto;
+    width: 500px;
     padding: 37px 58px 47px;
     margin-bottom: 67px;
 
@@ -485,6 +481,7 @@ input[type="radio"]:focus + .form__radio-indicator {
     position: static;
     width: auto;
     padding: 0 39px 0 38px;
+    margin: 0 auto;
   }
 
   .form__entry-field {
@@ -590,13 +587,13 @@ input[type="radio"]:focus + .form__radio-indicator {
 
   //#############################################################//
   .form__contacts {
+    width: 824px;
     padding: 33px 58px 1px;
     margin-top: 3px;
     margin-bottom: 57px;
   }
 
   .form__contacts-wrapper {
-    width: 820px;
     display: flex;
     justify-content: space-between;
   }
@@ -604,14 +601,10 @@ input[type="radio"]:focus + .form__radio-indicator {
   .form__title-contacts {
     width: 375px;
     margin-bottom: 4px;
+  }
 
-    &--phone::after {
-      top: 3px;
-    }
-
-    &--mail::after {
-      top: 3px;
-    }
+  .form__title-contacts svg {
+    top: 3px;
   }
 
   .form__input-contacts {
@@ -662,6 +655,7 @@ input[type="radio"]:focus + .form__radio-indicator {
 
   //#############################################################//
   .form__emotion {
+    width: 824px;
     padding-top: 34px;
     padding-bottom: 39px;
     margin-bottom: 65px;
