@@ -6,6 +6,9 @@
     <meta name="viewport" content="width=device-width,initial-scale=1">
     <meta name="format-detection" content="telephone=no">
     <link rel="stylesheet" href="css/style.min.css">
+    <link rel="preload" href="fonts/opensans.woff2" as="font" crossorigin="anonymous">
+    <link rel="preload" href="fonts/opensansbold.woff2" as="font" crossorigin="anonymous">
+    <link rel="preload" href="fonts/opensanslight.woff2" as="font" crossorigin="anonymous">
   </head>
   <body>
 
@@ -307,11 +310,11 @@
             <span class="contacts__address">ул. Большая Конюшенная, 19/8</span>
           </div>
         </div>
-        <div class="contacts__map">
+        <div class="contacts__map" id="map">
           <svg class="contacts__map-marker" width="36" height="36">
             <use xlink:href="#icon-map-marker"></use>
           </svg>
-          <script type="text/javascript" charset="utf-8" async src="https://api-maps.yandex.ru/services/constructor/1.0/js/?um=constructor%3Aab3d4eb447ba74ad63ec60765026e32520af6045c97908ae3129e3b5ebe91094&amp;width=100%25&amp;min-height=240&amp;lang=ru_RU&amp;scroll=true"></script>
+
         </div>
       </section>
 
@@ -364,7 +367,8 @@
 
     </footer>
 
-    <script src="js/main.js"></script>
+    <script src="js/main.min.js"></script>
+    <script type="text/javascript" charset="utf-8" async src="https://api-maps.yandex.ru/services/constructor/1.0/js/?um=constructor%3Aab3d4eb447ba74ad63ec60765026e32520af6045c97908ae3129e3b5ebe91094&amp;width=100%25&amp;min-height=240&amp;lang=ru_RU&amp;id=map&amp;scroll=true"></script>
 
   </body>
 </html>
